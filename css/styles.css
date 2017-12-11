@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,600,700');
+
+/*@font-face {
+    font-family: 'Fira Sans Regular', sans-serif;
+    src: url('../fonts/FiraSans-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fira Sans SemiBold', sans-serif;
+    src: url('../fonts/FiraSans-Semibold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fira Sans Bold', sans-serif;
+    src: url('../fonts/FiraSans-Bold.ttf') format('truetype');
+}*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Fira Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.wrapper {
+    width: 100%;
+}
+
+body header div.wrapper-inner {
+    display: flex;
+    justify-content: center;
+    align-items:flex-start ;
+    width: 100%;
+    max-width: 1230px;
+}
+
+a {
+    text-decoration: none;
+    transition: .4s;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 176px;
+    height: 55px;
+    font-weight: 700;
+    font-size: 17px;
+    color: #fff;
+    text-decoration: none;
+}
+
+.button-red {
+    background: radial-gradient(rgba(255, 85, 85, .37), transparent) no-repeat center center,
+    url(../images/button-red.png) no-repeat 0 0;
+    background-size: 170px 45px , auto auto;
+}
+
+.button-red:hover {
+    background: radial-gradient(rgba(255, 85, 85, 0), transparent) no-repeat center center,
+    url(../images/button-red.png) no-repeat 0 0;
+}
+
+/****** header *******/
+
+header[role='banner'] {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: #fff;
+    padding: 20px 0;
+}
+
+.button.button-red{
+    display: flex;
+    margin-left: 60px;
+}
+
+.logo{
+    margin-right: 60px;
+}
+
+.phone-block {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    margin-top: 5px;
+}
+
+.phone-block span {
+    font-size: 14px;
+    font-weight: normal;
+    color: grey;
+
+}
+
+.phone-block a span {
+    font-size: 25px;
+    color: black;
+}
+
+.phone-block a span .colored{
+    color: firebrick;
+}
+
+nav {
+    padding-left: 25px;
+}
+
+li {
+    display: inline-flex;
+    margin-left: 25px;
+    padding-top: 20px;
+}
+
+li a span{
+    font-size: 17px;
+    font-weight: 700;
+    color: black;
+}
+/**********header*********/
+
+/****** main *******/
+
+main {
+    text-align: center;
+    padding: 100px 0 0;
+    min-height: 100vh;
+    background: url(../images/background.jpg) no-repeat center top;
+}
+
+h1 {
+    display: inline-block;
+    font-weight: 700;
+    color: #fff;
+    font-size: 57px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-bottom: 30px;
+}
+
+h1:before {
+    content: '';
+    display: block;
+    width: 223px;
+    height: 198px;
+    background: url(../images/background-title.png) no-repeat 0 0;
+    position: absolute;
+    left: -90px;
+    top: -45px;
+    z-index: -1;
+}
+
+h2{
+    color: white;
+    font-size: 20px;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 25px;
+
+}
+.bottom-button-black{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 176px;
+    height:55px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    background-image: url("../images/bottom-button-black.png");
+    margin-left: 10px;
+}
+
+.bottom-button-red{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 176px;
+    height: 55px;
+    font-size: 17px;
+    font-weight: 700;
+    color: white;
+    background-image: url("../images/bottom-button-red.png");
+    margin-right: 10px;
+}
+
+h3{
+    font-size: 27px;
+    font-weight: bolder;
+    color: #db3232;
+    padding-bottom: 35px;
+    margin-top: 100px;
+}
+
+.partners-list{
+    width: 1230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+partners-list img{
+    background-image: url("../images/hollow-partners-icon.png");
+
+}
+
+
+
+/****** footer *******/
